@@ -1,0 +1,135 @@
+* {
+    font-family: 'Comic Neue', cursive;
+}
+body {
+    background-color: #B3DAC5;
+}
+
+h5 {
+    line-break: anywhere;
+}
+
+/* -------------------KEY FRAMES--------------------------- */
+
+
+/* -------------------END KEY FRAMES--------------------------- */
+
+.add-task .task-title {
+    background-color: #F2BE5E;
+    font-weight: bold;
+    height: 100%;
+    border: 2px solid #F2BE5E;
+}
+
+.add-task .search {
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.add-task .search:focus {
+    outline: none;
+}
+
+.add-task .add-button {
+    background-color: #E88D69;
+    width: 60%;
+    height: 80%;
+}
+
+#task .layout {
+    width: 80%;
+    min-height: 220px;
+    padding-right: 15px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    background-color: #E88D69;
+    border-radius: 10px;   
+    border: 1px solid black;
+}
+
+#task .layout .task-content {
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: #F6ECD5;
+    padding: 10px;
+    padding-top: 40px;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    right: 5px;
+    bottom: 5px;
+}
+
+#task .layout .task-content .bar-layout {
+    width: 140px;
+    height: 21px;
+    position: absolute;
+    background-color: #E88D69;
+    right: -20px;
+    top: 10px;
+    z-index: 2;
+}
+
+#task .layout .task-content .bar-layout .bar {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: 5px;
+    bottom: 5px;
+    background-color: #F2BE5E;
+    border: 1px solid black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 3;
+}
+#task .layout .task-content .bar-layout .bar svg {
+    position: absolute;
+    right: 0;
+    background-color: #F6ECD5;
+    border-radius: 2px;
+    z-index: 4;
+}
+
+@media screen and (max-width: 767px) {
+    h5 {
+        font-size: 1rem;
+    }
+    #task .layout {
+        width: 90%;
+    }
+
+    #task .layout .task-content .bar-layout {
+        width: 100px;
+    }
+}
+
+#task .layout .task-content .done-layout {
+    position: relative;
+    right: 0px;
+    left: -1px;
+    top: -1px;
+    bottom: 0px;
+    opacity: 0.5;
+    border-radius: 10px;
+    
+}
+
+#task .layout .task-content input {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    accent-color: #F2BE5E;
+    z-index: 2;
+}
+
+@media screen and (max-width: 480px) {
+    h5 {
+        font-size: 1rem;
+    }
+}
